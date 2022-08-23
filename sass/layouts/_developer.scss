@@ -1,0 +1,31 @@
+ .developer-list {
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+    width: calc((100% - 60px) / 3);
+    margin-top: 50px; 
+
+&__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__item {
+  position: relative;
+}
+  }

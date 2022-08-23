@@ -1,0 +1,44 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0%;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+a {
+  color: currentColor;
+}
+button {
+  cursor: pointer;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+body {
+  padding-top: 80px;
+}
+.pre-title {  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-heading);
+}
