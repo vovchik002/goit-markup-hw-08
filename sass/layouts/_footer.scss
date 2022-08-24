@@ -1,29 +1,52 @@
 
-  footer {
+  .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
+    // flex-direction: column;
+    // justify-content: center;
   }
   
+  .footer-wrap {display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+width: 100%;}
+
+
+
   .footer-adress {
     padding-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+    
   }
-  
+  .logo_adress {display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  width: 100%;
+margin-bottom: 60px;
+@include tablet {width: 50%;}
+@include desktop {width: 25%}
+}
+
+
   .footer-logo {
     margin-bottom: 20px;
     display: flex;
+    width: 100%;
   }
-  
-  .footer .container {
-    display: flex;
-  }
-  
+
   .footer-item {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
+    text-align: center;
+   
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -40,6 +63,12 @@
     }
   }
   
+  .mailing {display: flex;
+  flex-direction: column;
+align-items:center;
+width: 100%;
+@include desktop {width: 50%;}}
+
   .mailing-heading {
     font-weight: 700;
     font-size: 14px;
@@ -47,38 +76,47 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    text-align: left;
-    margin-left: 93px;
+    text-align: center;
     margin-bottom: 20px;
   }
   .mailing-input {
     position: relative;
     display: flex;
-    margin-left: 93px;
+    flex-direction: column;
+    width: 100%;
+    
   }
   .sent-svg {
     position: absolute;
-    right: 23px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 50%;
+    bottom: 13px;
+    transform: translateX(320%);
   }
   .input-mailing {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: #2f303a;
-    width: 358px;
     height: 50px;
     color: #ffffff;
-    padding-left: 16px;
-    margin-right: 12px;
+    width:100%;
+    margin-bottom: 20px;
+   
   }
  
   .mailing_btn {
     padding-right: 62px;
   }
   
-  
+  .social-link-footer {display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-bottom: 60px;
+  width: 100%;
+
+@include tablet{width: 50%;}
+@include desktop {width: 25%;}
+}
   .social-connect-heading {
     font-weight: 700;
     font-size: 14px;
@@ -87,13 +125,12 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
-    margin-left: 70px;
+
   }
   .social-connect-list {
     display: flex;
     gap: 10px;
     padding-left: 0;
-    margin-left: 70px;
   }
   
   .soc-item-footer {
@@ -114,3 +151,4 @@
     }
   }
   
+.footer-label {width: 100%;}
