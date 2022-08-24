@@ -1,4 +1,27 @@
- .developer-list {
+.developer {position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+@include tablet {position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;}
+  @include desktop {overflow: auto;}
+}
+
+.developer-list {
     display: flex;
     gap: 30px;
     padding-left: 0;

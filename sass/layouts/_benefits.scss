@@ -1,7 +1,8 @@
 .benefits-description {
     display: flex;
-    padding-left: 0;
-    text-align: left;
+     flex-wrap: wrap;
+     padding-left: 0;
+  
     gap: 30px;
     &__heading {
       font-weight: 700;
@@ -10,9 +11,14 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: var(--color-heading);
+      text-align: center;
+      margin-top: 30px;
     }
     &__item {
       gap: 30;
+      width: 100%;
+      @include tablet {width: calc((100% - 30px) / 2);}
+      @include desktop {width: calc((100% - 90px) / 4);}
     }
     &__paragraph {
       font-size: 14px;
@@ -20,29 +26,32 @@
       letter-spacing: 0.03em;
       color: var(--color-paragraph);
       margin-top: 10px;
-      max-width: 270px;
+      max-width: 100%;
     }
-  }
-  .benefits {
-    padding-top: 94px;
-    &__icon {
-      display: flex;
-      gap: 30px;
-      padding-left: 0;
-      margin-bottom: 30px;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    &__item {
-      width: 270px;
-      height: 120px;
-      border: 50%;
-      background-color: #f5f4fa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+   
   }
   
+  .benefits__icon {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  }
+  
+  .benefits__item {
+    border: 50%;
+    background-color: #f5f4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+  padding-bottom: 25px;
+  }
+
+
+
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {padding-top: 94px;
+      padding-bottom: 94px;}
+  }
   

@@ -45,6 +45,9 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -53,11 +56,19 @@ body {
 
 .pre-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-heading);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .pre-title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .btn {
@@ -80,16 +91,26 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.section-size {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -215,11 +236,11 @@ body {
 }
 
 .heading {
-  max-width: 1600;
+  width: 100%;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-img.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   padding-top: 200px;
   padding-left: auto;
@@ -227,24 +248,34 @@ body {
   padding-bottom: 200px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .heading {
+    width: 100%;
+  }
+}
 .heading__caption {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .heading__caption {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
+}
 
 .benefits-description {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
-  text-align: left;
   gap: 30px;
 }
 .benefits-description__heading {
@@ -254,9 +285,22 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-heading);
+  text-align: center;
+  margin-top: 30px;
 }
 .benefits-description__item {
   gap: 30;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits-description__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-description__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .benefits-description__paragraph {
   font-size: 14px;
@@ -264,28 +308,65 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-paragraph);
   margin-top: 10px;
-  max-width: 270px;
+  max-width: 100%;
 }
 
-.benefits {
-  padding-top: 94px;
-}
 .benefits__icon {
-  display: flex;
-  gap: 30px;
-  padding-left: 0;
-  margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
+
 .benefits__item {
-  width: 270px;
-  height: 120px;
   border: 50%;
   background-color: #f5f4fa;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.developer {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .developer {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .developer {
+    overflow: auto;
+  }
 }
 
 .developer-list {
@@ -320,42 +401,46 @@ body {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-list__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-caption {
   padding: 30px 8px;
   text-align: center;
   background-color: #ffffff;
+  width: 100%;
 }
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
-  width: calc((100% - 90px) / 4);
-  margin-top: 50px;
-}
-
-.team-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-heading);
-}
-
-.team-list__heading {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
-  letter-spacing: 0.03em;
-  color: var(--color-heading);
 }
 
 .team-list__paragraph {
@@ -393,15 +478,25 @@ body {
   fill: #ffffff;
 }
 
+.client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .client-logo {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
   margin-top: 50px;
 }
 .client-logo__link {
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -415,6 +510,21 @@ body {
 .client-logo__link:hover, .client-logo__link:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
+}
+
+.client-logo__item {
+  width: calc((100% - 30px) / 2);
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .client-logo__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-logo__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 footer {
