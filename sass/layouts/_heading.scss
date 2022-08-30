@@ -7,6 +7,11 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/bg-img-mob.jpg);
+  @include retina { background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../image/bg-img-mob-2x.jpg);}
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,12 +26,22 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   ),
-  url(../image/bg-img-tablet.jpg);}
+  url(../image/bg-img-tablet.jpg);
+  @include retina { background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../image/bg-img-tablet-2x.jpg);}}
   @include desktop {background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   ),
-  url(../image/bg-img.jpg)}
+  url(../image/bg-img.jpg);
+  @include retina { background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../image/bg-img-2x.jpg);}}
 
 
 &__caption {
