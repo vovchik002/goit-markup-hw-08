@@ -5,6 +5,12 @@
   
   .header {
     background: #ffffff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include desktop {padding-top: 0;
+      padding-bottom: 0;};
+    @include tablet {padding-top: 0;
+        padding-bottom: 0;}
   
     position: fixed;
     width: 100%;
@@ -14,10 +20,15 @@
   }
   
   .navigation__list {
-    display: flex;
+    display: none;
     gap: 30px;
     padding-left: 0;
     margin-left: 83px;
+    @include tablet {display: flex;
+      margin-left: 88px;
+    gap: 50px;}
+    @include desktop {display: flex;}
+    
   }
 
   .navigation__item {
@@ -69,7 +80,14 @@
       line-height: calc(16 / 14);
       letter-spacing: 0.02em;
       color: var(--color-paragraph);
-      display: flex;
+      display: none;
+      @include tablet {display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+      @include desktop {display: flex;
+      flex-direction: row;}
     }
     
   &__item {
@@ -85,6 +103,7 @@
       transition-property: color, fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
   
       &:hover,
       &:focus {

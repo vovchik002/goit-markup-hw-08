@@ -36,7 +36,9 @@ img {
   width: 100%;
 }
 body {
-  padding-top: 80px;
+  padding-top: 60px;
+  @include tablet {padding-top: 80px;};
+  @include desktop {padding-top: 80px;}
 }
 .pre-title {  font-weight: 700;
   font-size: 28px;
