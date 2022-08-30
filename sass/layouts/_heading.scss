@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../image/bg-img.jpg);
+    url(../image/bg-img-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,7 +16,17 @@
   padding-right: auto;
   padding-bottom: 200px;
   text-align: center;
-  @include tablet{width: 100%;}
+  @include tablet{width: 100%;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../image/bg-img-tablet.jpg);}
+  @include desktop {background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../image/bg-img.jpg)}
 
 
 &__caption {

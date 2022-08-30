@@ -238,7 +238,7 @@ body {
 .heading {
   width: 100%;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-img-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -251,6 +251,12 @@ body {
 @media screen and (min-width: 768px) {
   .heading {
     width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-img-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-img.jpg);
   }
 }
 .heading__caption {
@@ -338,34 +344,13 @@ body {
 }
 
 .developer {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-  .developer {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .developer {
-    overflow: auto;
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -376,6 +361,7 @@ body {
   width: calc((100% - 60px) / 3);
   margin-top: 50px;
 }
+
 .developer-list__text {
   font-weight: 700;
   font-size: 14px;
@@ -395,8 +381,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .developer-list__item {
   position: relative;
+}
+
+.developer-list__img {
+  width: 370px;
 }
 
 .team {
@@ -531,6 +522,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  width: 100%;
 }
 
 .footer-wrap {
@@ -562,7 +554,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo_adress {
-    width: 25%;
+    text-align: left;
+    width: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -579,6 +573,11 @@ body {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-item {
+    text-align: left;
+  }
 }
 .footer-item:last-child {
   margin-bottom: 0;
@@ -602,7 +601,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .mailing {
-    width: 50%;
+    width: auto;
+    margin-left: 93px;
+    align-items: left;
   }
 }
 
@@ -616,6 +617,11 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .mailing-heading {
+    text-align: left;
+  }
+}
 
 .mailing-input {
   position: relative;
@@ -623,12 +629,25 @@ body {
   flex-direction: column;
   width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    flex-direction: row;
+    width: auto;
+  }
+}
 
 .sent-svg {
   position: absolute;
   right: 50%;
   bottom: 13px;
   transform: translateX(320%);
+}
+@media screen and (min-width: 1200px) {
+  .sent-svg {
+    right: 23px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
 }
 
 .input-mailing {
@@ -640,10 +659,25 @@ body {
   color: #ffffff;
   width: 100%;
   margin-bottom: 20px;
+  padding-left: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .input-mailing {
+    width: 358px;
+    height: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .mailing_btn {
   padding-right: 62px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing_btn {
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+  }
 }
 
 .social-link-footer {
@@ -660,7 +694,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .social-link-footer {
-    width: 25%;
+    margin-left: 70px;
+    margin-bottom: 0;
+    width: auto;
   }
 }
 
@@ -672,6 +708,11 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .social-connect-heading {
+    align-items: left;
+  }
 }
 
 .social-connect-list {
@@ -699,6 +740,11 @@ body {
 
 .footer-label {
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-label {
+    width: auto;
+  }
 }
 
 .header-portfolio {
