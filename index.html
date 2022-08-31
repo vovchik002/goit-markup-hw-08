@@ -110,31 +110,51 @@
         <ul class="developer-list list">
           <li >
             <div class="developer-list__item">
-            <img
-              src="./image/box1.jpg"
-              alt="Блоксхеми, кодування на планшеті та macbook"
-              width="370"  height="294" 
-            />
+              <picture>
+                <source srcset="./image/box1.jpg 1x, 
+                ./image/box1-2x.jpg 2x"
+                media="(min-width: 1200px)"> 
+                <img
+                srcset="./image/box1.jpg 1x, 
+                ./image/box1-2x.jpg 2x"
+                  src="./image/box1.jpg"
+                  alt="Блоксхеми, кодування на планшеті та macbook"
+                  width="370"  height="294" 
+                />
+              </picture>
+           
             <p class="developer-list__text">Десктопні додатки</p>
           </div>
           </li>
           <li >
             <div class="developer-list__item">
-            <img
+              <picture>
+                <source srcset="./image/box2.jpg 1x, 
+                ./image/box2-2x.jpg 2x"
+                media="(min-width: 1200px)"> 
+                <img
               src="./image/box2.jpg"
               alt="Macbook, телефон, розміщення блоків кодування"
               width="370" height="294"
             />
+              </picture>
+            
             <p class="developer-list__text">Мобільні додатки</p>
           </div>
           </li>
           <li >
             <div class="developer-list__item">
-            <img
+              <picture>
+                <source srcset="./image/box3.jpg 1x, 
+                ./image/box3-2x.jpg 2x"
+                media="(min-width: 1200px)"> 
+                <img
               src="./image/box3.jpg"
               alt="Вибір кольору на планшеті"
               width="370" height="294"
             />
+              </picture>
+            
             <p class="developer-list__text">Дизайнерські рішення</p>
           </div>
           </li>
@@ -146,7 +166,20 @@
         <h2 class="pre-title">Наша команда</h2>
         <ul class="list team-list">
           <li class="team-list__item">
-            <img src="./image/img1.jpg" alt="Ігор Демяненко" width="270" />
+            <picture>
+              <source srcset="./image/img1.jpg 1x, 
+              ./image/img1-2x.jpg 2x"
+              media="(min-width: 1200px)">
+              <source srcset="./image/img1-tablet.jpg 1x, 
+              ./image/img1-tablet-2x.jpg 2x"
+              media="(min-width: 768px)">
+              <source srcset="./image/img1-mob.jpg 1x, 
+              ./image/img1-mob-2x.jpg 2x"
+              media="(max-width: 767px)"> 
+              <img src="./image/img1.jpg" alt="Ігор Демяненко" width="270" />
+            </picture>
+            
+            
             <div class="team-caption">
             <h3 class="team-list__heading">Ігор Дем'яненко</h3>
             <p class="team-list__paragraph">Product Designer</p>
