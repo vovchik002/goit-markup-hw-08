@@ -178,8 +178,6 @@
               media="(max-width: 767px)"> 
               <img src="./image/img1.jpg" alt="Ігор Демяненко" width="270" />
             </picture>
-            
-            
             <div class="team-caption">
             <h3 class="team-list__heading">Ігор Дем'яненко</h3>
             <p class="team-list__paragraph">Product Designer</p>
@@ -208,7 +206,18 @@
           </div>
           </li>
           <li class="team-list__item">
-            <img src="./image/img2.jpg" alt="Ольга Репіна" width="270" />
+            <picture>
+              <source srcset="./image/img2.jpg 1x, 
+              ./image/img2-2x.jpg 2x"
+              media="(min-width: 1200px)">
+              <source srcset="./image/img2-tablet.jpg 1x, 
+              ./image/img2-tablet-2x.jpg 2x"
+              media="(min-width: 768px)">
+              <source srcset="./image/img2-mob.jpg 1x, 
+              ./image/img2-mob-2x.jpg 2x"
+              media="(max-width: 767px)"> 
+              <img src="./image/img2.jpg" alt="Ольга Репіна" width="270" />
+            </picture>
             <div class="team-caption">
             <h3 class="team-list__heading">Ольга Репіна</h3>
             <p class="team-list__paragraph">Frontend Developer</p>
@@ -237,7 +246,18 @@
           </div>
           </li>
           <li class="team-list__item">
-            <img src="./image/img3.jpg" alt="Микола Тарасов" width="270" />
+            <picture>
+            <source srcset="./image/img3.jpg 1x, 
+              ./image/img3-2x.jpg 2x"
+              media="(min-width: 1200px)">
+              <source srcset="./image/img3-tablet.jpg 1x, 
+              ./image/img3-tablet-2x.jpg 2x"
+              media="(min-width: 768px)">
+              <source srcset="./image/img3-mob.jpg 1x, 
+              ./image/img3-mob-2x.jpg 2x"
+              media="(max-width: 767px)"> 
+              <img src="./image/img3.jpg" alt="Микола Тарасов" width="270" />
+            </picture>
             <div class="team-caption">
             <h3 class="team-list__heading">Микола Тарасов</h3>
             <p class="team-list__paragraph">Marketing</p>
@@ -266,7 +286,18 @@
           </div>
           </li>
           <li class="team-list__item">
+            <picture>
+            <source srcset="./image/img4.jpg 1x, 
+            ./image/img4-2x.jpg 2x"
+            media="(min-width: 1200px)">
+            <source srcset="./image/img4-tablet.jpg 1x, 
+            ./image/img4-tablet-2x.jpg 2x"
+            media="(min-width: 768px)">
+            <source srcset="./image/img4-mob.jpg 1x, 
+            ./image/img4-mob-2x.jpg 2x"
+            media="(max-width: 767px)"> 
             <img src="./image/img4.jpg" alt="Михайло Єрмаков" width="270" />
+          </picture>
             <div class="team-caption">
             <h3 class="team-list__heading">Михайло Єрмаков</h3>
             <p class="team-list__paragraph">UI Designer</p>
