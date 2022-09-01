@@ -1,8 +1,11 @@
 .developer {display: none;
 @include desktop {display: flex;
-padding-top: 94px;padding-bottom: 94px;}}
+padding-top: 94px;padding-bottom: 94px;} }
 .developer-list {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   gap: 30px;
   padding-left: 0;
   width: calc((100% - 60px) / 3);
@@ -33,4 +36,3 @@ position: relative;
 
 }
 
-.developer-list__img {width: 370px;}
