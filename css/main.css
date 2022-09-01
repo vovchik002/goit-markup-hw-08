@@ -550,7 +550,6 @@ body {
   justify-content: space-between;
   gap: 30px;
   padding-left: 0;
-  width: calc((100% - 60px) / 3);
   margin-top: 50px;
 }
 
