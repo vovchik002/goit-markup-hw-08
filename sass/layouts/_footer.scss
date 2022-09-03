@@ -72,7 +72,7 @@ align-items:center;
 width: 100%;
 @include desktop {
 width: auto;margin-left: 93px;
-align-items: left;}}
+align-items: start;}}
 
   .mailing-heading {
     font-weight: 700;
@@ -83,13 +83,14 @@ align-items: left;}}
     color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
-    @include desktop {text-align: left;}
+   
   }
   .mailing-input {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
+    
     @include desktop {flex-direction:row; width: auto;}
     
   }
@@ -112,6 +113,7 @@ align-items: left;}}
     width:100%;
     margin-bottom: 20px;
     padding-left: 10px;
+    @include tablet {width: 450px; margin-left: auto; margin-right: auto;}
     @include desktop {width: 358px; height: 50px;
   
     margin-bottom: 0;}
@@ -131,7 +133,8 @@ align-items: left;}}
 
 @include tablet{width: 50%;}
 @include desktop {margin-left: 70px;margin-bottom: 0;
-width: auto;}
+width: auto;
+align-items: start;}
 }
 
 
@@ -146,7 +149,7 @@ width: auto;}
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
-    @include desktop {align-items: left;}
+    @include desktop {text-align: left;}
 
   }
   .social-connect-list {

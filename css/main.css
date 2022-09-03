@@ -417,10 +417,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 200px;
+  padding-top: 118px;
   padding-left: auto;
   padding-right: auto;
-  padding-bottom: 200px;
+  padding-bottom: 118px;
   text-align: center;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -442,6 +442,10 @@ body {
 @media screen and (min-width: 1200px) {
   .heading {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-img.jpg);
+    padding-top: 200px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -461,8 +465,9 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .heading__caption {
+    justify-content: center;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -483,6 +488,16 @@ body {
   color: var(--color-heading);
   text-align: center;
   margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .benefits-description__heading {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-description__heading {
+    text-align: left;
+  }
 }
 .benefits-description__item {
   gap: 30;
@@ -529,7 +544,7 @@ body {
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -675,6 +690,7 @@ body {
   margin-top: 50px;
 }
 .client-logo__link {
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -790,7 +806,7 @@ body {
   .mailing {
     width: auto;
     margin-left: 93px;
-    align-items: left;
+    align-items: start;
   }
 }
 
@@ -803,11 +819,6 @@ body {
   color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .mailing-heading {
-    text-align: left;
-  }
 }
 
 .mailing-input {
@@ -848,6 +859,13 @@ body {
   margin-bottom: 20px;
   padding-left: 10px;
 }
+@media screen and (min-width: 768px) {
+  .input-mailing {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .input-mailing {
     width: 358px;
@@ -884,6 +902,7 @@ body {
     margin-left: 70px;
     margin-bottom: 0;
     width: auto;
+    align-items: start;
   }
 }
 
@@ -898,7 +917,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .social-connect-heading {
-    align-items: left;
+    text-align: left;
   }
 }
 
@@ -939,8 +958,14 @@ body {
 }
 
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-button {
@@ -1099,6 +1124,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 30px);
+  max-width: 450px;
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -1114,6 +1140,7 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    max-width: 528px;
   }
 }
 .backdrop.is-hidden .modal {
@@ -1140,17 +1167,11 @@ body {
 
 .modal-par {
   font-weight: 700;
-  font-size: 15px;
-  line-height: 1.2666666667;
+  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-}
-@media screen and (min-width: 768px) {
-  .modal-par {
-    font-size: 20px;
-    line-height: 1.15;
-  }
 }
 @media screen and (min-width: 1200px) {
   .modal-par {
@@ -1219,18 +1240,12 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666667;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .policy-text {
-    font-size: 14px;
-    line-height: 1.7142857143;
-  }
 }
 @media screen and (min-width: 1200px) {
   .policy-text {

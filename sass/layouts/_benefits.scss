@@ -13,6 +13,8 @@
       color: var(--color-heading);
       text-align: center;
       margin-top: 30px;
+      @include tablet {text-align: left;};
+      @include desktop {text-align: left;}
     }
     &__item {
       gap: 30;
@@ -52,6 +54,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     @include desktop {padding-top: 94px;
-      padding-bottom: 94px;}
+      padding-bottom: 0;}
   }
   
