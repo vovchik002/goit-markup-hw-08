@@ -322,6 +322,7 @@ body {
   background-color: #ffffff;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .menu-close:hover, .menu-close:focus {
   fill: var(--basic-color);
@@ -634,6 +635,15 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
+}
+
+.team-list__heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .team-list__paragraph {
@@ -1112,14 +1122,14 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
 }
-.backdrop.is-hidden {
+.backdrop.visually-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1129,7 +1139,7 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1143,9 +1153,14 @@ body {
     max-width: 528px;
   }
 }
-.backdrop.is-hidden .modal {
+.backdrop.visually-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal.visually-hidden {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal {
